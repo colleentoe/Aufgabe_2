@@ -3,19 +3,19 @@ package de.softwaretechnik;
 public class Sieve {
 
         private int getPrimeNumber;
-        private Integer[] primeList;
-        private int count=1;
+        private int[] primeList;
+        private int count = 1;
 
         public Sieve(int getPrimNumber) {
             this.getPrimeNumber = getPrimNumber;
             this.primeList = findPrimes(getPrimeNumber);
         }
 
-        private Integer[] findPrimes(int getPrimeNumber){
-            Integer[] newArray = new Integer[getPrimeNumber+1];
+        private int[] findPrimes(int getPrimeNumber){
+            int[] newArray = new int[getPrimeNumber+1];
 
             for (int i = 0; i < getPrimeNumber+1; i++) {
-                if(i==0) newArray[i] = -1;
+                if(i == 0) newArray[i] = -1;
                 else newArray[i] = i;
             }
 
@@ -34,8 +34,8 @@ public class Sieve {
             return newArray;
         }
 
-        public Integer[] getPrimeList() {
-            Integer[] smallList = new Integer[getPrimeNumber+1-count];
+        public int[] getPrimeList() {
+            int[] smallList = new int[getPrimeNumber+1-count];
             int count = 0;
             for (int i = 0; i < primeList.length; i++) {
                 if(primeList[i]!=-1) {
