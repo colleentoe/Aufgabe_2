@@ -11,7 +11,7 @@ public class Sieve {
             this.primeList = findPrimes(getPrimeNumber);
         }
 
-        private int[] findPrimes(int getPrimeNumber){
+        public int[] findPrimes(int getPrimeNumber){
             int[] newArray = new int[getPrimeNumber+1];
 
             for (int i = 0; i < getPrimeNumber+1; i++) {
@@ -35,7 +35,7 @@ public class Sieve {
         }
 
         public int[] getPrimeList() {
-            int[] smallList = new int[getPrimeNumber+1-count];
+            int[] smallList = new int[getPrimeNumber + 1 -count];
             int count = 0;
             for (int i = 0; i < primeList.length; i++) {
                 if(primeList[i]!=-1) {

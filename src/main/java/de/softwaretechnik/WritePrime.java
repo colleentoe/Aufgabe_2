@@ -3,10 +3,11 @@ package de.softwaretechnik;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class WritePrime {
 
-    public void writeFile(int[] isPrime, String name) throws Exception {
+    public void writeFile(int[] isPrime, String name) throws IOException {
 
         if(name == null) name = "test";
 
