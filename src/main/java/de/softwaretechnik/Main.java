@@ -1,5 +1,15 @@
 package de.softwaretechnik;
 
+/**
+ * @author1 Denice Graupeter M26783
+ * @author2 Colleen Tölle M24730
+ * @date 2020-11-02
+ *
+ * Softwaretechnik Exercise 2
+ *
+ * This Class creates a text file with the prime numbers. The maximum nuber is the transfered argument
+ * number.
+ */
 public class Main {
 
     public static void main(String[] args){

@@ -5,8 +5,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author1 Denice Graupeter M26783
+ * @author2 Colleen Tölle M24730
+ * @date 2020-11-02
+ *
+ * Softwaretechnik Exercise 2
+ *
+ * This class tests all the methods from Sieve class.
+ */
 class SieveTest {
 
+    //Test that all primes are found that are expected.
     @Test
     void findPrimes() {
 
@@ -21,6 +31,7 @@ class SieveTest {
         }
     }
 
+    //Test for a false input number.
     @Test
     void findPrimesFalse(){
 
@@ -34,6 +45,7 @@ class SieveTest {
         }
     }
 
+    //Test with the prime numbers only.
     @Test
     void getPrimeList() {
 
