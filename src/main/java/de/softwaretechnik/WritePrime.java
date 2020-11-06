@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class WritePrime {
 
-    public void writeFile(int[] isPrime, String name) {
+    public void writeFile(Integer[] isPrime, String name) {
         if(name == null) name = "test";
 
         File file = new File(name + ".txt");

@@ -2,7 +2,6 @@ package de.softwaretechnik;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
         String dataName = "test";
@@ -11,9 +10,10 @@ public class Main {
 
         int maxPrimes =  Integer.parseInt(args[0]);
 
-        Sieve sieve = new Sieve();
+        Sieve sieve = new Sieve(maxPrimes);
 
-        int [] primes = sieve.getPrime(maxPrimes);
+        Integer[] primes = sieve.getPrimeList();
+
         WritePrime writePrime = new WritePrime();
 
         writePrime.writeFile(primes, dataName);
