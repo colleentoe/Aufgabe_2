@@ -15,7 +15,6 @@ public class Main {
         Integer[] primes = sieve.getPrimeList();
 
         WritePrime writePrime = new WritePrime();
-
         writePrime.writeFile(primes, dataName);
     }
 }
