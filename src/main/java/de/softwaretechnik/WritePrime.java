@@ -7,7 +7,7 @@ import java.io.IOException;
 
 /**
  * @author1 Denice Graupeter M26783
- * @author2 Colleen Tölle M24730
+ * @author2 Colleen Tölle M27430
  * @date 2020-11-02
  *
  * Softwaretechnik Exercise 2
